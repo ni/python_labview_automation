@@ -39,15 +39,15 @@ all the indicators on the VI.
             "DBL Control": 5.0,
             "String Control": "Hello World!",
             "Error In": {
-                "Status": False,
-                "Code": 0,
-                "Source": ""
+                "status": False,
+                "code": 0,
+                "source": ""
             }
         }
         indicators = c.run_vi_synchronous(
             vi_path, control_values)
         print(indicators['Result'])
-        error_message = c.get_error_description(indicators['Error Out'])
+        error_message = c.describe_error(indicators['Error Out'])
     lv.kill() # Stop LabVIEW
 
 Development
