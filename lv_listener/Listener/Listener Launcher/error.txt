@@ -1,0 +1,19 @@
+Build Failed!
+Error:
+Error 5005 occurred at LVAutomationListener.lvlib:LVAutomationListener.lvclass:_error.vi
+
+Possible reason(s):
+
+User aborted compiler.
+
+
+
+Complete call chain:
+     LVAutomationListener.lvlib:LVAutomationListener.lvclass:_error.vi
+     LVAutomationListener.lvlib:LVAutomationListener.lvclass:Abort.vi
+     LVAutomationListener.lvlib:Abort Msg.lvclass:Do.vi:3750001
+     Actor Framework.lvlib:Actor.lvclass:Receive Message.vi:1040003
+     Actor Framework.lvlib:Actor.lvclass:Actor Core.vi:5880001
+     LVAutomationListener.lvlib:LVAutomationListener.lvclass:Actor Core.vi:5880001
+     Actor Framework.lvlib:Actor.lvclass:Actor.vi:6640005
+     Actor Framework.lvlib:Actor.lvclass:Actor.vi.ACBRProxyCaller.4B0002F

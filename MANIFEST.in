@@ -1,0 +1,4 @@
+include *.txt
+recursive-include docs *
+recursive-include  lv_listener *
+recursive-include  labview_automation *
