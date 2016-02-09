@@ -15,6 +15,9 @@ between Python and LabVIEW is tcp the messages can be sent to another machine.
 
 Installation
 ------------
+This package depends on hoplite.  First install hoplite.  When/if hoplite
+is added to PyPI then this manual step will not be needed.
+
 labview_automation can be installed by cloning the master branch and then
 in a command line in the directory of setup.py run:
 
