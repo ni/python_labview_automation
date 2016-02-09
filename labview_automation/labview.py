@@ -434,7 +434,6 @@ class LabVIEWHelpers(object):
                 os.path.join(
                     os.path.dirname(__file__),
                     '..',
-                    '..',
                     'lv_listener',
                     'Listener',
                     'Listener Launcher',
