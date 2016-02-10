@@ -13,6 +13,14 @@ messages to the VI which then performs the commands.
 LabVIEW can be started on a remote machine using hoplite.  Since the interface
 between Python and LabVIEW is tcp the messages can be sent to another machine.
 
+Note on Security
+----------------
+Python LabVIEW Automation opens a TCP port and does not have any secure protocols currently implemented.
+
+Support
+-------
+Python LabVIEW Automation is not supported by National Instruments.
+
 Installation
 ------------
 This package depends on hoplite.  First install hoplite.  When/if hoplite
