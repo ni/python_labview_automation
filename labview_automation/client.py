@@ -155,7 +155,7 @@ class LabVIEWClient(object):
     def _recv_dict(self):
         if self.connection:
             packet_size = self.connection.recv(4)
-            packet_size_int = struct.unpack('l', packet_size)[0]
+            packet_size_int = struct.unpack('<l', packet_size)[0]
             # First part of packet will be the 4-byte packet size
             packet = packet_size
             while len(packet) < packet_size_int:
