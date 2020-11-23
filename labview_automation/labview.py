@@ -276,7 +276,15 @@ class LabVIEW(object):
     def start_with_args(self, args):
         run_args = [self.executable]
         run_args = run_args + args
-        self._pid = self._helpers.start_process(run_args)
+
+	for proc in psutil.process_iter(['pid', 'name']):
+		if(proc.info['name'] == "LabVIEW.exe"):
+			self._pid = proc.info['pid']
+
+	if(self._pid == None):
+        	self._pid = self._helpers.start_process(run_args)
+	else:
+		self._helpers.start_process(run_args)
 
     def is_running(self):
         return self._helpers.process_is_running(self._pid, self.executable)
