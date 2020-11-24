@@ -280,6 +280,7 @@ class LabVIEW(object):
 	for proc in psutil.process_iter(['pid', 'name']):
 		if(proc.info['name'] == "LabVIEW.exe"):
 			self._pid = proc.info['pid']
+			break
 
 	if(self._pid == None):
         	self._pid = self._helpers.start_process(run_args)
